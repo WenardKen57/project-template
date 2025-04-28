@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack --config webpack.prod.js",
-    "start": "npx webpack serve --config webpack.dev.js",
+    "dev": "npx webpack serve --config webpack.dev.js",
     "clean": "rm -rf ./dist"
   },
   "author": "Ken",
