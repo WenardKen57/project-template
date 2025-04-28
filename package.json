@@ -1,0 +1,21 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "Contains the usual things I do when creating new project setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config webpack.prod.js",
+    "start": "npx webpack serve --config webpack.dev.js",
+    "clean": "rm -rf ./dist"
+  },
+  "author": "Ken",
+  "license": "ISC",
+  "devDependencies": {
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}
