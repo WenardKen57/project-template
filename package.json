@@ -4,8 +4,11 @@
   "description": "Contains the usual things I do when creating new project setup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" ",
+    "pretest": "echo \"Hello\"",
+    "posttest": "echo \"Post test\"&& exit 1",
     "build": "npx webpack --config webpack.prod.js",
+    "prebuild": "npm run clean",
     "dev": "npx webpack serve --config webpack.dev.js",
     "clean": "rm -rf ./dist"
   },
@@ -18,6 +21,7 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.99.7",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^5.2.1",
+    "webpack-merge": "^6.0.1"
   }
 }
