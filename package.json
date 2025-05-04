@@ -4,12 +4,11 @@
   "description": "Contains the usual things I do when creating new project setup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" ",
-    "pretest": "echo \"Hello\"",
-    "posttest": "echo \"Post test\"&& exit 1",
     "build": "npx webpack --config webpack.prod.js",
     "prebuild": "npm run clean",
     "dev": "npx webpack serve --config webpack.dev.js",
+    "predeploy": "git add dist -f && git commit -m \"Deployment commit\"",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
     "clean": "rm -rf ./dist"
   },
   "author": "Ken",
